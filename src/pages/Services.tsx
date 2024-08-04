@@ -1,3 +1,3 @@
-export default function Services(){
-    return <>Serviços</>;
+export default function Services() {
+  return <>Serviços</>;
 }
