@@ -12,10 +12,10 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/servicos" element={<Services />} />
-          <Route path="/sobre" element={<About />} />
-          <Route path="/contato" element={<Contact />} />
+          <Route path="/labmet" element={<Home />} />
+          <Route path="/labmet/servicos" element={<Services />} />
+          <Route path="/labmet/sobre" element={<About />} />
+          <Route path="/labmet/contato" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </Body>
