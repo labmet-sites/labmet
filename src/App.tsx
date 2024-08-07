@@ -12,10 +12,10 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <Routes>
-          <Route path="/labmet" element={<Home />} />
-          <Route path="/labmet/servicos" element={<Services />} />
-          <Route path="/labmet/sobre" element={<About />} />
-          <Route path="/labmet/contato" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/servicos" element={<Services />} />
+          <Route path="/sobre" element={<About />} />
+          <Route path="/contato" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </Body>
@@ -29,8 +29,6 @@ const Body = styled.div`
 
   * {
     display: flex;
-    align-items: center;
-    justify-content: center;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }
