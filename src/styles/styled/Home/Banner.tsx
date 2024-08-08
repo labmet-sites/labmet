@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
-import banner1 from '../../assets/imgs/banner1.jpg';
-import banner2 from '../../assets/imgs/banner2.jpg';
-import banner3 from '../../assets/imgs/banner3.jpg';
+import banner1 from '../../../assets/imgs/banner1.jpg';
+import banner2 from '../../../assets/imgs/banner2.jpg';
+import banner3 from '../../../assets/imgs/banner3.jpg';
 
 const changeBg = keyframes`  
     0% {  
@@ -16,7 +16,7 @@ const changeBg = keyframes`
     100% {  
         background-image: url(${banner1});  
     }  
-`; 
+`;
 
 export const Banner = styled.div`
   width: 100vw;
@@ -24,7 +24,11 @@ export const Banner = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0) 15%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 5%,
+    rgba(0, 0, 0, 0) 15%
+  );
   animation: ${changeBg} 10s infinite;
   background-repeat: no-repeat;
   background-size: cover;

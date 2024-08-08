@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme } from '../theme';
+import { theme } from '../../theme';
 
 export const MainSection = styled.section`
   width: 100vw;
@@ -27,10 +27,10 @@ export const MainSection = styled.section`
     font-size: 38px;
     color: #fff;
     letter-spacing: 3px;
-    margin-bottom: 50PX;
+    margin-bottom: 50px;
   }
 
-  .labmet-text{
+  .labmet-text {
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -40,7 +40,7 @@ export const MainSection = styled.section`
     text-align: center;
   }
 
-  .about-link{
+  .about-link {
     width: max-content;
     height: max-content;
     background-color: #fff;
@@ -52,10 +52,10 @@ export const MainSection = styled.section`
     transition: 300ms;
     font-size: 20px;
 
-    &:hover{
-        background-color:  ${theme.colors.primary};
-        color:  #fff;
-        scale: 1.06;
+    &:hover {
+      background-color: ${theme.colors.primary};
+      color: #fff;
+      scale: 1.06;
     }
   }
 `;
