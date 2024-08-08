@@ -1,0 +1,61 @@
+import styled from 'styled-components';
+import { theme } from '../theme';
+
+export const MainSection = styled.section`
+  width: 100vw;
+  height: 94vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: transparent;
+
+  .banner-wave {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .labmet-sigla {
+    width: 600px;
+    margin-bottom: 10px;
+  }
+
+  .labmet-name {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 38px;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 50PX;
+  }
+
+  .labmet-text{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-link{
+    width: max-content;
+    height: max-content;
+    background-color: #fff;
+    padding: 14px 34px;
+    color: ${theme.colors.primary};
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 8px;
+    transition: 300ms;
+    font-size: 20px;
+
+    &:hover{
+        background-color:  ${theme.colors.primary};
+        color:  #fff;
+        scale: 1.06;
+    }
+  }
+`;

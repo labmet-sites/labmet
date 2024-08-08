@@ -26,6 +26,7 @@ export default App;
 
 const Body = styled.div`
   width: 100%;
+  position: relative;
 
   * {
     display: flex;

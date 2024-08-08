@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../styles/theme';
 
 export const HeaderStyles = styled.header`
   width: 88%;
@@ -21,22 +22,21 @@ export const HeaderStyles = styled.header`
     left: 20px;
   }
 
-  .header-options{
-        width: max-content;
-        height: 100%;
-        .option{
-            width: max-content;
-            height: 100%;
-            padding: 0px 26px;
-            text-decoration: none;
-            color: #fff;
-            font-weight: 400;
-            transition: 300ms;
-            align-items: center;
-            &:hover{
-                background-color: #9ebdf1;
-                color: #213968;
-            }
-        }
+  .header-options {
+    width: max-content;
+    height: 100%;
+    .option {
+      width: max-content;
+      height: 100%;
+      padding: 0px 26px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      transition: 300ms;
+      align-items: center;
+      &:hover {
+        background-color: ${theme.colors.primary};
+      }
     }
+  }
 `;
