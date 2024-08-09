@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
 export const HeaderStyles = styled.header`
-display: flex;
+  display: flex;
   width: 88%;
   height: 52px;
   top: 30px;
@@ -17,7 +17,6 @@ display: flex;
 
   .header-logo {
     height: 70%;
-    filter: brightness(120%);
     position: absolute;
     left: 20px;
   }
@@ -33,7 +32,8 @@ display: flex;
       padding: 0px 26px;
       text-decoration: none;
       color: ${theme.colors.primary};
-      font-weight: 400;
+      font-weight: 600;
+      font-size: 16px;
       transition: 300ms;
       align-items: center;
       &:hover {
@@ -41,5 +41,15 @@ display: flex;
         color: #fff;
       }
     }
+  }
+
+  @media (max-width: 1750px) {
+    height: 48px;
+
+  .header-options {
+    .option {
+      font-size: 14px;
+    }
+  }
   }
 `;

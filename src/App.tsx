@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { theme } from './styles/theme';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ export default App;
 const Body = styled.div`
   width: 100%;
   position: relative;
-  background-color: #eaeaea;
+  background-color: ${theme.colors.primary};
 
   * {
     box-sizing: border-box;

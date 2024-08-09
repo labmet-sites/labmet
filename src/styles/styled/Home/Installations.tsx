@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import room from "../../../assets/imgs/room.jpg";
+import room from '../../../assets/imgs/room.jpg';
 import auditorio from '../../../assets/imgs/auditorio.png';
 import lab_fisica from '../../../assets/imgs/lab_fisica.png';
 import banner1 from '../../../assets/imgs/banner1.jpg';
@@ -10,8 +10,8 @@ export const Installations = styled.section`
   height: max-content;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
-  padding: 0px 60px;
+  padding: 60px 60px;
+  background-color: #eaeaea;
 
   .instalations-photos {
     width: 100%;
@@ -69,6 +69,27 @@ export const Installations = styled.section`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        .first-img-content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Kanit', sans-serif;
+          font-size: 36px;
+          font-weight: 400;
+          color: #fff;
+          text-decoration: underline 1px;
+          transition: 300ms;
+          opacity: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        &:hover {
+          .first-img-content {
+            opacity: 1;
+          }
+        }
       }
 
       .down-imgs {
@@ -82,16 +103,58 @@ export const Installations = styled.section`
           background-size: cover;
           background-position: center center;
           border-radius: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Kanit', sans-serif;
+          font-size: 26px;
+          font-weight: 400;
+          color: transparent;
+          text-decoration: underline 1px;
+          transition: 300ms;
+
+          .down-imgs-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Kanit', sans-serif;
+            color: #fff;
+            transition: 300ms;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.65);
+
+            .down-img-tilte{
+                font-size: 28px;
+                font-weight: 400;
+                text-decoration: underline 1px;
+            }
+            .down-img-text{
+                width: 90%;
+                margin-top: 10px;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+          }
+
+          &:hover {
+            .down-imgs-content {
+              opacity: 1;
+            }
+          }
         }
 
         .auditorio {
           background-image: url(${auditorio});
-          filter: brightness(74%);
         }
 
         .lab-fisica {
           background-image: url(${lab_fisica});
-          filter: brightness(74%);
         }
       }
     }

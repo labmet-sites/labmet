@@ -9,8 +9,7 @@ export const InfoSection = styled.section`
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
-  padding-bottom: 270px;
+  padding-bottom: 120px;
   padding-top: 70px;
 
   .areas {
@@ -19,7 +18,7 @@ export const InfoSection = styled.section`
     height: 100%;
     justify-content: space-between;
     position: relative;
-    margin-top: 30px;
+    margin-top: 60px;
 
     .areas-bg {
       display: flex;

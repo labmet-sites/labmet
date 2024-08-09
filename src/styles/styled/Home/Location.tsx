@@ -3,13 +3,16 @@ import { theme } from '../../theme';
 
 export const Location = styled.section`
   width: 100%;
-  height: 88vh;
+  height: 100vh;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 30px 0px;
+  margin-top: 80px;
+  padding-top: 160px;
   position: relative;
-  display: flex;
+  background-color: #eaeaea;
+  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 100%);
 
   *{
     z-index: 99;
@@ -19,7 +22,7 @@ export const Location = styled.section`
     width: 54%;
     position: absolute;
     z-index: 1;
-    top: 14%;
+    top: 24%;
     right: 2%;
     opacity: 0.5;
   }

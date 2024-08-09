@@ -3,13 +3,12 @@ import { theme } from '../../theme';
 
 export const MainSection = styled.section`
   width: 100vw;
-  height: 94vh;
+  height: 96vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background-color: transparent;
 
   .banner-wave {
     display: flex;
@@ -61,6 +60,30 @@ export const MainSection = styled.section`
       background-color: ${theme.colors.primary};
       color: #fff;
       scale: 1.06;
+    }
+  }
+
+  @media (max-width: 1740px) {
+    .labmet-sigla {
+      width: 420px;
+      margin-bottom: 6px;
+    }
+
+    .labmet-name {
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .labmet-text {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    .about-link {
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-size: 18px;
     }
   }
 `;

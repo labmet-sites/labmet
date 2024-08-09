@@ -30,7 +30,7 @@ display: flex;
     rgba(0, 0, 0, 0.7) 5%,
     rgba(0, 0, 0, 0) 15%
   );
-  animation: ${changeBg} 16s infinite;
+  animation: ${changeBg} 12s infinite;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

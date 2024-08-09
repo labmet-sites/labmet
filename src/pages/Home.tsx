@@ -100,24 +100,44 @@ export default function Home() {
         <div className="instalations-photos">
           <div className="photos-left">
             <h3 className="left-text">
-              <strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book
+              <strong>Lorem Ipsum is simply</strong> dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a type specimen
+              book
             </h3>
-            <div className='big-image'></div>
+            <div className="big-image"></div>
           </div>
           <div className="photos-right">
-            <div className='first-img'></div>
-            <div className='down-imgs'>
-              <div className='lab-fisica'></div>
-              <div className='auditorio'></div>
+            <div className="first-img">
+              <div className="first-img-content">Vista Frontal</div>
+            </div>
+            <div className="down-imgs">
+              <div className="lab-fisica">
+                <div className="down-imgs-content">
+                 <p className='down-img-tilte'> Laboratório de Fisico-Química</p>
+                  <span className='down-img-text'>
+                    Laboratório Equipado para realização de
+                    experimentos destinados ao 
+                    estudo físico-quimido.
+                  </span>
+                </div>
+              </div>
+              <div className="auditorio">
+                <div className="down-imgs-content">
+                  <p  className='down-img-tilte'>Auditório</p>
+                  <span className='down-img-text'>
+                    Usado para apresentação de palestras e reuniões
+                    dos projetos realizados no laboratório.
+                  </span>
+                  </div>
+              </div>
             </div>
           </div>
           <div></div>
         </div>
       </Installations>
-      <Footer/>
+      <Footer />
     </HomeStyles>
   );
 }
