@@ -63,7 +63,7 @@ export const MainSection = styled.section`
     }
   }
 
-  @media (max-width: 1750px) {
+  @media (max-width: 1550px) {
     .labmet-sigla {
       width: 420px;
       margin-bottom: 6px;

@@ -16,7 +16,7 @@ export const Installations = styled.section`
   .instalations-photos {
     width: 100%;
     height: 700px;
-    margin-top: 50px;
+    margin-top: 110px;
     display: flex;
 
     .photos-left {
@@ -61,11 +61,11 @@ export const Installations = styled.section`
       .first-img,
       .down-imgs {
         width: 100%;
-        height: 49%;
         font-weight: 600;
       }
 
       .first-img {
+        height: 62%;
         background-image: url(${banner1});
         background-repeat: no-repeat;
         background-size: cover;
@@ -95,8 +95,10 @@ export const Installations = styled.section`
       }
 
       .down-imgs {
+        height: 37%;
         display: flex;
         justify-content: space-between;
+
         .auditorio,
         .lab-fisica {
           width: 49%;
@@ -105,7 +107,6 @@ export const Installations = styled.section`
           background-size: cover;
           background-position: center center;
           border-radius: 6px;
-          font-size: 26px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -127,7 +128,7 @@ export const Installations = styled.section`
             background-color: rgba(0, 0, 0, 0.65);
 
             .down-img-title {
-              font-size: 28px;
+              font-size: 22px;
               font-weight: 600;
               text-decoration: underline 1px;
             }
@@ -135,7 +136,7 @@ export const Installations = styled.section`
               width: 90%;
               margin-top: 10px;
               text-decoration: none;
-              font-size: 18px;
+              font-size: 16px;
               font-weight: 600;
               text-align: center;
               letter-spacing: 1px;
@@ -160,13 +161,14 @@ export const Installations = styled.section`
     }
   }
 
-  @media (max-width: 1700px) {
+  @media (max-width: 1550px) {
     padding: 40px 30px;
 
     .instalations-photos {
       width: 100%;
       height: 500px;
-      margin-top: 30px;
+      margin-top: 80px;
+      margin-bottom: 30px;
 
       .photos-left {
         margin-right: 2px;
@@ -188,7 +190,6 @@ export const Installations = styled.section`
         margin-left: 8px;
 
         .first-img {
-          height: 54%;
           border-radius: 4px;
           .first-img-content {
             font-size: 28px;
@@ -196,7 +197,6 @@ export const Installations = styled.section`
         }
 
         .down-imgs {
-          height: 45%;
           .auditorio,
           .lab-fisica {
             width: 49.5%;

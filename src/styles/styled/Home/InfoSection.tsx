@@ -123,7 +123,7 @@ export const InfoSection = styled.section`
     }
   }
 
-  @media (max-width: 1700px) {
+  @media (max-width: 1550px) {
     padding-bottom: 60px;
     padding-top: 60px;
 

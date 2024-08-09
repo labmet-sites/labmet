@@ -7,7 +7,7 @@ export const SectionTitle = styled.h1<{ $titleColor?: string }>`
   font-weight: 200;
   letter-spacing: 3px;
 
-  @media (max-width: 1750px) {
+  @media (max-width: 1550px) {
     font-size: 36px;
   }
 `;

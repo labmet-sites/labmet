@@ -64,14 +64,14 @@ export const Location = styled.section`
     }
   }
 
-  @media (max-width: 1700px) {
+  @media (max-width: 1550px) {
     margin-top: 40px;
     padding-top: 120px;
     clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
 
     .location-map {
-      width: 44%;
-      top: 38%;
+      width: 54%;
+      top: 24%;
     }
 
     .location-content {
@@ -79,12 +79,12 @@ export const Location = styled.section`
       margin-top: 60px;
 
       .location-iframe {
-        width: 480px;
-        height: 320px;
+        width: 540px;
+        height: 360px;
       }
 
       .location-link {
-        width: 480px;
+        width: 540px;
 
         :nth-child(1) {
           padding: 12px 32px;

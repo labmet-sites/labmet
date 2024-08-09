@@ -43,7 +43,7 @@ export const HeaderStyles = styled.header`
     }
   }
 
-  @media (max-width: 1750px) {
+  @media (max-width: 1550px) {
     height: 48px;
 
     .header-options {
