@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../theme';
 
 export const InfoSection = styled.section`
- display: flex;
+  display: flex;
   width: 100%;
   height: max-content;
   background-color: ${theme.colors.primary};
@@ -119,6 +119,55 @@ export const InfoSection = styled.section`
       .title-2 {
         left: -300px;
         bottom: 110px;
+      }
+    }
+  }
+
+  @media (max-width: 1700px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    .areas {
+      margin-top: 40px;
+
+      .area {
+        margin: 0px 70px;
+
+        .area-img {
+          width: 360px;
+          margin-bottom: 46px;
+        }
+
+        .area-title {
+          padding: 10px 30px;
+          font-size: 21px;
+        }
+
+        .title-1 {
+          top: 184px;
+          left: 310px;
+        }
+
+        .area-text {
+          width: 360px;
+          font-size: 18px;
+
+          .more {
+            margin-top: 3px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .inverted-area {
+        .area-img {
+          margin-top: 50px;
+        }
+
+        .title-2 {
+          left: -260px;
+          bottom: 62px;
+        }
       }
     }
   }

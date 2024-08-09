@@ -6,4 +6,8 @@ export const SectionTitle = styled.h1<{ $titleColor?: string }>`
   font-family: 'Kanit', sans-serif;
   font-weight: 200;
   letter-spacing: 3px;
+
+  @media (max-width: 1750px) {
+    font-size: 36px;
+  }
 `;

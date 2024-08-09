@@ -1,16 +1,16 @@
-import styled from "styled-components";
-import { theme } from "../../styles/theme";
+import styled from 'styled-components';
+import { theme } from '../../styles/theme';
 
 export const FooterStyles = styled.footer`
-display: flex;
-    width: 100%;
-    height: 260px;
-    margin-top: 130px;
-    justify-content: center;
-    align-items: center;
-    background-color: ${theme.colors.primary};
+  display: flex;
+  width: 100%;
+  height: 260px;
+  margin-top: 130px;
+  justify-content: center;
+  align-items: center;
+  background-color: ${theme.colors.primary};
 
-    .footer-logo{
-        width: 240px;
-    }
+  .footer-logo {
+    width: 240px;
+  }
 `;

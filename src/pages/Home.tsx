@@ -115,22 +115,24 @@ export default function Home() {
             <div className="down-imgs">
               <div className="lab-fisica">
                 <div className="down-imgs-content">
-                 <p className='down-img-tilte'> Laboratório de Fisico-Química</p>
-                  <span className='down-img-text'>
-                    Laboratório Equipado para realização de
-                    experimentos destinados ao 
-                    estudo físico-quimido.
+                  <p className="down-img-tilte">
+                    {' '}
+                    Laboratório de Fisico-Química
+                  </p>
+                  <span className="down-img-text">
+                    Laboratório Equipado para realização de experimentos
+                    destinados ao estudo físico-quimido.
                   </span>
                 </div>
               </div>
               <div className="auditorio">
                 <div className="down-imgs-content">
-                  <p  className='down-img-tilte'>Auditório</p>
-                  <span className='down-img-text'>
-                    Usado para apresentação de palestras e reuniões
-                    dos projetos realizados no laboratório.
+                  <p className="down-img-tilte">Auditório</p>
+                  <span className="down-img-text">
+                    Usado para apresentação de palestras e reuniões dos projetos
+                    realizados no laboratório.
                   </span>
-                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -126,19 +126,19 @@ export const Installations = styled.section`
             opacity: 0;
             background-color: rgba(0, 0, 0, 0.65);
 
-            .down-img-tilte{
-                font-size: 28px;
-                font-weight: 400;
-                text-decoration: underline 1px;
+            .down-img-tilte {
+              font-size: 28px;
+              font-weight: 400;
+              text-decoration: underline 1px;
             }
-            .down-img-text{
-                width: 90%;
-                margin-top: 10px;
-                text-decoration: none;
-                font-size: 18px;
-                font-weight: 600;
-                text-align: center;
-                letter-spacing: 1px;
+            .down-img-text {
+              width: 90%;
+              margin-top: 10px;
+              text-decoration: none;
+              font-size: 18px;
+              font-weight: 600;
+              text-align: center;
+              letter-spacing: 1px;
             }
           }
 

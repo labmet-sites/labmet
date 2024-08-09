@@ -46,10 +46,10 @@ export const HeaderStyles = styled.header`
   @media (max-width: 1750px) {
     height: 48px;
 
-  .header-options {
-    .option {
-      font-size: 14px;
+    .header-options {
+      .option {
+        font-size: 14px;
+      }
     }
-  }
   }
 `;
