@@ -49,6 +49,7 @@ export const InfoSection = styled.section`
       .area-img {
         width: 520px;
         margin-bottom: 80px;
+        filter: brightness(72%);
       }
 
       .area-title {
@@ -85,6 +86,7 @@ export const InfoSection = styled.section`
         font-size: 24px;
         font-weight: 200;
         letter-spacing: 1px;
+        display: flex;
         text-align: justify;
         flex-direction: column;
 

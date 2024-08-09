@@ -30,12 +30,11 @@ display: flex;
     rgba(0, 0, 0, 0.7) 5%,
     rgba(0, 0, 0, 0) 15%
   );
-  animation: ${changeBg} 10s infinite;
+  animation: ${changeBg} 16s infinite;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: absolute;
   top: 0;
   z-index: 0;
-  filter: brightness(60%);
 `;

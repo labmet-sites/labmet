@@ -27,6 +27,7 @@ export default App;
 const Body = styled.div`
   width: 100%;
   position: relative;
+  background-color: #eaeaea;
 
   * {
     box-sizing: border-box;

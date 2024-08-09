@@ -32,12 +32,13 @@ display: flex;
       height: 100%;
       padding: 0px 26px;
       text-decoration: none;
-      color: #fff;
+      color: ${theme.colors.primary};
       font-weight: 400;
       transition: 300ms;
       align-items: center;
       &:hover {
         background-color: ${theme.colors.primary};
+        color: #fff;
       }
     }
   }

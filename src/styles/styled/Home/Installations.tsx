@@ -1,21 +1,8 @@
-import styled, { keyframes } from 'styled-components';
-import anechoic from '../../../assets/imgs/anechoic.webp';
-import chamber from '../../../assets/imgs/chamber.jpg';
+import styled from 'styled-components';
+import room from "../../../assets/imgs/room.jpg";
 import auditorio from '../../../assets/imgs/auditorio.png';
 import lab_fisica from '../../../assets/imgs/lab_fisica.png';
-import vista_frontal from '../../../assets/imgs/vista_frontal.png';
-
-const changeBg = keyframes`  
-    0% {  
-        background-image: url(${anechoic});  
-    }  
-    50% {  
-        background-image: url(${chamber});  
-    }
-    100% {  
-        background-image: url(${anechoic});  
-    }   
-`;
+import banner1 from '../../../assets/imgs/banner1.jpg';
 
 export const Installations = styled.section`
   width: 100%;
@@ -55,7 +42,7 @@ export const Installations = styled.section`
       .big-image {
         width: 100%;
         height: 74%;
-        animation: ${changeBg} 12s infinite;
+        background-image: url(${room});
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -77,11 +64,11 @@ export const Installations = styled.section`
         height: 49%;
       }
 
-      .first-img{
-        background-image: url(${vista_frontal});
+      .first-img {
+        background-image: url(${banner1});
         background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
+        background-size: cover;
+        background-position: center center;
       }
 
       .down-imgs {
@@ -97,12 +84,14 @@ export const Installations = styled.section`
           border-radius: 6px;
         }
 
-        .auditorio{
-            background-image: url(${auditorio});
+        .auditorio {
+          background-image: url(${auditorio});
+          filter: brightness(74%);
         }
 
-        .lab-fisica{
-            background-image: url(${lab_fisica});
+        .lab-fisica {
+          background-image: url(${lab_fisica});
+          filter: brightness(74%);
         }
       }
     }
