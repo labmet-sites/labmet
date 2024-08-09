@@ -62,6 +62,7 @@ export const Installations = styled.section`
       .down-imgs {
         width: 100%;
         height: 49%;
+        font-weight: 600;
       }
 
       .first-img {
@@ -69,6 +70,7 @@ export const Installations = styled.section`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        border-radius: 8px;
         .first-img-content {
           width: 100%;
           height: 100%;
@@ -103,14 +105,12 @@ export const Installations = styled.section`
           background-size: cover;
           background-position: center center;
           border-radius: 6px;
+          font-size: 26px;
           display: flex;
           align-items: center;
           justify-content: center;
           font-family: 'Kanit', sans-serif;
-          font-size: 26px;
-          font-weight: 400;
           color: transparent;
-          text-decoration: underline 1px;
           transition: 300ms;
 
           .down-imgs-content {
@@ -126,9 +126,9 @@ export const Installations = styled.section`
             opacity: 0;
             background-color: rgba(0, 0, 0, 0.65);
 
-            .down-img-tilte {
+            .down-img-title {
               font-size: 28px;
-              font-weight: 400;
+              font-weight: 600;
               text-decoration: underline 1px;
             }
             .down-img-text {
@@ -155,6 +155,63 @@ export const Installations = styled.section`
 
         .lab-fisica {
           background-image: url(${lab_fisica});
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1700px) {
+    padding: 40px 30px;
+
+    .instalations-photos {
+      width: 100%;
+      height: 500px;
+      margin-top: 30px;
+
+      .photos-left {
+        margin-right: 2px;
+
+        .left-text {
+          strong {
+            font-weight: 700;
+          }
+          font-size: 16px;
+        }
+
+        .big-image {
+          height: 76%;
+          border-radius: 4px;
+        }
+      }
+
+      .photos-right {
+        margin-left: 8px;
+
+        .first-img {
+          height: 54%;
+          border-radius: 4px;
+          .first-img-content {
+            font-size: 28px;
+          }
+        }
+
+        .down-imgs {
+          height: 45%;
+          .auditorio,
+          .lab-fisica {
+            width: 49.5%;
+
+            .down-imgs-content {
+              .down-img-title {
+                font-size: 21px;
+                text-decoration: underline 1px;
+              }
+              .down-img-text {
+                margin-top: 6px;
+                font-size: 14px;
+              }
+            }
+          }
         }
       }
     }

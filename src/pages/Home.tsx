@@ -115,7 +115,7 @@ export default function Home() {
             <div className="down-imgs">
               <div className="lab-fisica">
                 <div className="down-imgs-content">
-                  <p className="down-img-tilte">
+                  <p className="down-img-title">
                     {' '}
                     Laboratório de Fisico-Química
                   </p>
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
               <div className="auditorio">
                 <div className="down-imgs-content">
-                  <p className="down-img-tilte">Auditório</p>
+                  <p className="down-img-title">Auditório</p>
                   <span className="down-img-text">
                     Usado para apresentação de palestras e reuniões dos projetos
                     realizados no laboratório.

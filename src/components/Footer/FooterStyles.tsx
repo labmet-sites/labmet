@@ -4,8 +4,8 @@ import { theme } from '../../styles/theme';
 export const FooterStyles = styled.footer`
   display: flex;
   width: 100%;
-  height: 260px;
-  margin-top: 130px;
+  height: 180px;
+  margin-top: 120px;
   justify-content: center;
   align-items: center;
   background-color: ${theme.colors.primary};

@@ -63,4 +63,35 @@ export const Location = styled.section`
       }
     }
   }
+
+  @media (max-width: 1700px) {
+    margin-top: 40px;
+    padding-top: 120px;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
+
+    .location-map {
+      width: 44%;
+      top: 38%;
+    }
+
+    .location-content {
+      width: 90%;
+      margin-top: 60px;
+
+      .location-iframe {
+        width: 480px;
+        height: 320px;
+      }
+
+      .location-link {
+        width: 480px;
+
+        :nth-child(1) {
+          padding: 12px 32px;
+          font-size: 21px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
 `;
