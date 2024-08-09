@@ -19,6 +19,7 @@ const changeBg = keyframes`
 `;
 
 export const Banner = styled.div`
+display: flex;
   width: 100vw;
   height: 94vh;
   align-items: center;

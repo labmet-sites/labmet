@@ -4,6 +4,7 @@ import { theme } from '../../theme';
 export const MainSection = styled.section`
   width: 100vw;
   height: 94vh;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -11,6 +12,7 @@ export const MainSection = styled.section`
   background-color: transparent;
 
   .banner-wave {
+    display: flex;
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -19,9 +21,11 @@ export const MainSection = styled.section`
   .labmet-sigla {
     width: 600px;
     margin-bottom: 10px;
+    display: flex;
   }
 
   .labmet-name {
+    display: flex;
     font-family: 'Kanit', sans-serif;
     font-weight: 200;
     font-size: 38px;
@@ -41,6 +45,7 @@ export const MainSection = styled.section`
   }
 
   .about-link {
+    display: flex;
     width: max-content;
     height: max-content;
     background-color: #fff;

@@ -11,6 +11,10 @@ import capacitacao from '../assets/imgs/capacitacao.jpg';
 import labmetName from '../assets/svg/labmet_name.svg';
 import pb_map from '../assets/svg/pb_map.svg';
 import { Link } from 'react-router-dom';
+import { Installations } from '../styles/styled/Home/Installations';
+import { SectionTitle } from '../components/SectionTitle';
+import { theme } from '../styles/theme';
+import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -34,7 +38,7 @@ export default function Home() {
         <img className="banner-wave" src={wave} />
       </MainSection>
       <InfoSection>
-        <p className="info-title">ÁREAS DE ATUAÇÃO</p>
+        <SectionTitle>ÁREAS DE ATUAÇÃO</SectionTitle>
         <ul className="areas">
           <div className="areas-bg">
             <img className="areas-logo" src={logo} />
@@ -72,24 +76,55 @@ export default function Home() {
         </ul>
       </InfoSection>
       <Location>
-        <img className='location-map' src={pb_map} />
-        <p className="location-title">LOCALIZAÇÃO</p>
-        <div className='location-content'>
-        <iframe className='location-iframe'
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.254097466703!2d-35.910861924089886!3d-7.211827870807712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1f6fa71a700f%3A0xcb0d0fdae2dd2b65!2sLaborat%C3%B3rio%20de%20Metrologia%20(LABMET%20UFCG)!5e0!3m2!1spt-BR!2sbr!4v1723124578278!5m2!1spt-BR!2sbr"
-          loading="lazy"
-        ></iframe>
-        <div className='location-link'>
-        <a href='https://maps.app.goo.gl/rr1XLSKxGn1Tg9Ja6' target='_blank'>Google Maps</a>
-        </div>
+        <img className="location-map" src={pb_map} />
+        <SectionTitle $titleColor={theme.colors.primary}>
+          LOCALIZAÇÃO
+        </SectionTitle>
+        <div className="location-content">
+          <iframe
+            className="location-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.254097466703!2d-35.910861924089886!3d-7.211827870807712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1f6fa71a700f%3A0xcb0d0fdae2dd2b65!2sLaborat%C3%B3rio%20de%20Metrologia%20(LABMET%20UFCG)!5e0!3m2!1spt-BR!2sbr!4v1723124578278!5m2!1spt-BR!2sbr"
+            loading="lazy"
+          ></iframe>
+          <div className="location-link">
+            <a href="https://maps.app.goo.gl/rr1XLSKxGn1Tg9Ja6" target="_blank">
+              Google Maps
+            </a>
+          </div>
         </div>
       </Location>
+      <Installations>
+        <SectionTitle $titleColor={theme.colors.primary}>
+          NOSSAS INSTALAÇÕES
+        </SectionTitle>
+        <div className="instalations-photos">
+          <div className="photos-left">
+            <h3 className="left-text">
+              <strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </h3>
+            <div className='big-image'></div>
+          </div>
+          <div className="photos-right">
+            <div className='first-img'></div>
+            <div className='down-imgs'>
+              <div className='lab-fisica'></div>
+              <div className='auditorio'></div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </Installations>
+      <Footer/>
     </HomeStyles>
   );
 }
 
 const HomeStyles = styled.div`
   width: 100vw;
+  display: flex;
   height: max-content;
   position: relative;
   align-items: center;

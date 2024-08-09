@@ -9,6 +9,7 @@ export const Location = styled.section`
   flex-direction: column;
   padding: 30px 0px;
   position: relative;
+  display: flex;
 
   *{
     z-index: 99;
@@ -18,24 +19,17 @@ export const Location = styled.section`
     width: 54%;
     position: absolute;
     z-index: 1;
-    top: 12%;
+    top: 14%;
     right: 2%;
     opacity: 0.5;
   }
 
-  .location-title {
-    color: ${theme.colors.primary};
-    font-size: 46px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 200;
-    letter-spacing: 3px;
-    margin-bottom: 70px;
-  }
-
   .location-content{
+    display: flex;
     width: 80%;
     height: max-content;
     flex-direction: column;
+    margin-top: 80px;
 
     .location-iframe{
         width: 600px;
@@ -43,6 +37,7 @@ export const Location = styled.section`
     }
 
     .location-link{
+      display: flex;
         width: 600px;
         justify-content: center;
         margin-top: 20px;

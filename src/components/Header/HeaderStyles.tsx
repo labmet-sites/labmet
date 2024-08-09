@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
 export const HeaderStyles = styled.header`
+display: flex;
   width: 88%;
   height: 52px;
   top: 30px;
   border-radius: 3px;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   z-index: 999;
@@ -23,9 +23,11 @@ export const HeaderStyles = styled.header`
   }
 
   .header-options {
+    display: flex;
     width: max-content;
     height: 100%;
     .option {
+      display: flex;
       width: max-content;
       height: 100%;
       padding: 0px 26px;

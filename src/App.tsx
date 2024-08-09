@@ -29,7 +29,6 @@ const Body = styled.div`
   position: relative;
 
   * {
-    display: flex;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }

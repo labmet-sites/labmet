@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../theme';
 
 export const InfoSection = styled.section`
+ display: flex;
   width: 100%;
   height: max-content;
   background-color: ${theme.colors.primary};
@@ -10,24 +11,18 @@ export const InfoSection = styled.section`
   box-sizing: border-box;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
   padding-bottom: 270px;
-
-  .info-title {
-    color: #fff;
-    font-size: 46px;
-    margin-top: 70px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 200;
-    letter-spacing: 3px;
-    margin-bottom: 30px;
-  }
+  padding-top: 70px;
 
   .areas {
+    display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-between;
     position: relative;
+    margin-top: 30px;
 
     .areas-bg {
+      display: flex;
       width: 100%;
       height: 100%;
       align-items: center;
@@ -41,6 +36,7 @@ export const InfoSection = styled.section`
     }
 
     .area {
+      display: flex;
       width: max-content;
       height: 100%;
       flex-direction: column;
@@ -56,6 +52,7 @@ export const InfoSection = styled.section`
       }
 
       .area-title {
+        display: flex;
         width: max-content;
         height: max-content;
         padding: 14px 36px;
