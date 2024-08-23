@@ -1,20 +1,23 @@
 import styled, { keyframes } from 'styled-components';
-import banner1 from '../../../assets/imgs/banner1.jpg';
-import banner2 from '../../../assets/imgs/banner2.jpg';
-import banner3 from '../../../assets/imgs/banner3.jpg';
+
+const banners = [
+    'https://labmetfotos.s3.amazonaws.com/_MG_5037.jpg',
+    'https://labmetfotos.s3.amazonaws.com/_MG_5063.jpg',
+    'https://labmetfotos.s3.amazonaws.com/_MG_5055.jpg',
+];
 
 const changeBg = keyframes`  
     0% {  
-        background-image: url(${banner1});  
+        background-image: url(${banners[0]});  
     }  
     33% {  
-        background-image: url(${banner2});  
+        background-image: url(${banners[1]});  
     }  
     66% {   
-        background-image: url(${banner3});  
+        background-image: url(${banners[2]});  
     }  
     100% {  
-        background-image: url(${banner1});  
+        background-image: url(${banners[0]});  
     }  
 `;
 

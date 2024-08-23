@@ -10,10 +10,9 @@ export const HeaderStyles = styled.header`
   align-items: center;
   justify-content: flex-end;
   z-index: 999;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-color: #fff;
   position: absolute;
+  border: 1px solid ${theme.colors.secondary};
 
   .header-logo {
     height: 70%;

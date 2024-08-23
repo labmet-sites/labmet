@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import room from '../../../assets/imgs/room.jpg';
 import auditorio from '../../../assets/imgs/auditorio.png';
 import lab_fisica from '../../../assets/imgs/lab_fisica.png';
-import banner1 from '../../../assets/imgs/banner1.jpg';
 
 export const Installations = styled.section`
   width: 100%;
@@ -42,7 +40,7 @@ export const Installations = styled.section`
       .big-image {
         width: 100%;
         height: 74%;
-        background-image: url(${room});
+        background-image: url('https://labmetfotos.s3.amazonaws.com/_MG_5009.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -66,7 +64,7 @@ export const Installations = styled.section`
 
       .first-img {
         height: 62%;
-        background-image: url(${banner1});
+        background-image: url('https://labmetfotos.s3.amazonaws.com/_MG_5063.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
