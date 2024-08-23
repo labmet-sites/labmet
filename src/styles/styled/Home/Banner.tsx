@@ -33,7 +33,7 @@ export const Banner = styled.div`
     rgba(0, 0, 0, 0.7) 5%,
     rgba(0, 0, 0, 0) 15%
   );
-  animation: ${changeBg} 12s infinite;
+  animation: ${changeBg} 20s infinite;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

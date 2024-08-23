@@ -40,7 +40,7 @@ export const Installations = styled.section`
       .big-image {
         width: 100%;
         height: 74%;
-        background-image: url('https://labmetfotos.s3.amazonaws.com/_MG_5009.jpg');
+        background-image: url('https://labmetfotos.s3.amazonaws.com/_MG_5063.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -64,7 +64,7 @@ export const Installations = styled.section`
 
       .first-img {
         height: 62%;
-        background-image: url('https://labmetfotos.s3.amazonaws.com/_MG_5063.jpg');
+        background-image: url('https://labmetfotos.s3.amazonaws.com/_MG_5009.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;

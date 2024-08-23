@@ -6,11 +6,13 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { theme } from './styles/theme';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   return (
     <Body>
       <GlobalStyle />
+      <SpeedInsights/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
