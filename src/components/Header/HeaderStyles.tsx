@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
-export const HeaderStyles = styled.header`
+interface HeaderStylesProps {
+  bg?: string;
+  fontColor?: string;
+}
+
+export const HeaderStyles = styled.header<HeaderStylesProps>`
   display: flex;
   width: 88%;
   height: 52px;
   top: 30px;
-  border-radius: 3px;
+  border-radius: 5px;
   align-items: center;
   justify-content: flex-end;
   z-index: 999;
-  background-color: #fff;
+  background-color: ${({bg}) => bg || theme.colors.primary};
   position: absolute;
-  border: 1px solid ${theme.colors.secondary};
+  border: 1px solid ${({fontColor}) => fontColor || theme.colors.primary};
 
   .header-logo {
     height: 70%;
@@ -27,17 +32,16 @@ export const HeaderStyles = styled.header`
     .option {
       display: flex;
       width: max-content;
-      height: 100%;
       padding: 0px 26px;
       text-decoration: none;
-      color: ${theme.colors.primary};
+      color: ${({fontColor}) => fontColor || theme.colors.primary};
       font-weight: 600;
       font-size: 16px;
       transition: 300ms;
       align-items: center;
       &:hover {
-        background-color: ${theme.colors.primary};
-        color: #fff;
+        background-color:  ${({fontColor}) => fontColor || theme.colors.primary};
+        color: ${({bg}) => bg || theme.colors.primary};
       }
     }
   }

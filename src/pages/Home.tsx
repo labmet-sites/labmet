@@ -19,7 +19,7 @@ import Footer from '../components/Footer/Footer';
 export default function Home() {
   return (
     <HomeStyles>
-      <Header />
+      <Header bg={theme.colors.primary} fontColor="#fff"/>
       <Banner />
       <MainSection>
         <img className="labmet-sigla" src={labmetName}></img>

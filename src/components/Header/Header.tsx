@@ -1,10 +1,16 @@
 import { HeaderStyles } from './HeaderStyles';
 import logo from '../../assets/svg/labmet_s.svg';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
-export default function Header() {
+interface HeaderProps {
+  bg: string;
+  fontColor: string;
+}
+
+const Header: React.FC<HeaderProps> = ({bg, fontColor}) => {
   return (
-    <HeaderStyles>
+    <HeaderStyles bg={bg} fontColor={fontColor}>
       <img className="header-logo" src={logo} alt="Header Logo" />
       <ul className="header-options">
         <Link className="option" to={'/'}>
@@ -22,4 +28,6 @@ export default function Header() {
       </ul>
     </HeaderStyles>
   );
-}
+};
+
+export default Header;
