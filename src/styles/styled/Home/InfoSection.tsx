@@ -5,12 +5,13 @@ export const InfoSection = styled.section`
   display: flex;
   width: 100%;
   height: max-content;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.default};
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   padding-top: 70px;
+  position: relative;
 
   .areas {
     display: flex;
@@ -30,7 +31,7 @@ export const InfoSection = styled.section`
       z-index: 1;
       .areas-logo {
         width: 50%;
-        opacity: 0.3;
+        opacity: 0.2;
       }
     }
 
@@ -48,7 +49,7 @@ export const InfoSection = styled.section`
       .area-img {
         width: 520px;
         margin-bottom: 80px;
-        filter: brightness(72%);
+        filter: brightness(82%);
       }
 
       .area-title {
@@ -56,8 +57,8 @@ export const InfoSection = styled.section`
         width: max-content;
         height: max-content;
         padding: 14px 36px;
-        background-color: #9ae2ff;
-        color: #001449;
+        background-color: ${theme.colors.primary};
+        color: ${theme.colors.default};
         font-family: 'Kanit', sans-serif;
         font-size: 26px;
         font-weight: 300;
@@ -80,10 +81,10 @@ export const InfoSection = styled.section`
 
       .area-text {
         width: 520px;
-        color: #fff;
+        color: ${theme.colors.primary};
         font-family: 'Kanit', sans-serif;
         font-size: 24px;
-        font-weight: 200;
+        font-weight: 300;
         letter-spacing: 1px;
         display: flex;
         text-align: justify;
@@ -94,9 +95,9 @@ export const InfoSection = styled.section`
           justify-content: flex-end;
           margin-top: 4px;
           font-size: 20px;
-          color: #fff;
+          color: ${theme.colors.primary};
           font-family: 'Kanit', sans-serif;
-          font-weight: 100;
+          font-weight: 200;
           text-decoration: underline 1px;
           transition: 300ms;
 
@@ -121,6 +122,15 @@ export const InfoSection = styled.section`
         bottom: 110px;
       }
     }
+  }
+
+  .bottom-triangle{
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    right: 0px;
+    z-index: 0;
+    rotate: 3deg;
   }
 
   @media (max-width: 1550px) {

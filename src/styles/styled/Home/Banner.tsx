@@ -1,9 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
 const banners = [
-    'https://labmetfotos.s3.amazonaws.com/_MG_5037.jpg',
-    'https://labmetfotos.s3.amazonaws.com/_MG_5063.jpg',
-    'https://labmetfotos.s3.amazonaws.com/_MG_5055.jpg',
+  'https://labmetfotos.s3.amazonaws.com/_MG_5037.jpg',
+  'https://labmetfotos.s3.amazonaws.com/_MG_5063.jpg',
+  'https://labmetfotos.s3.amazonaws.com/_MG_5055.jpg',
 ];
 
 const changeBg = keyframes`  

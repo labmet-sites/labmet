@@ -28,7 +28,7 @@ export default App;
 const Body = styled.div`
   width: 100%;
   position: relative;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.default};
 
   * {
     box-sizing: border-box;

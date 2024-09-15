@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { theme } from '../../theme';
+import labmet_placa from '../../../assets/imgs/labmet_placa.jpg';
 
 export const Location = styled.section`
   width: 100%;
@@ -7,62 +8,82 @@ export const Location = styled.section`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
   margin-top: 80px;
-  padding-top: 160px;
   position: relative;
-  background-color: #eaeaea;
+  background-image: linear-gradient(to right top, #051937, #122547, #1e3258, #2a3f6a, #374d7c);
   clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 100%);
 
   * {
     z-index: 99;
   }
 
-  .location-map {
-    width: 54%;
-    position: absolute;
-    z-index: 1;
-    top: 24%;
-    right: 2%;
-    opacity: 0.5;
+  .location-image {
+    width: 42%;
+    height: 100%;
+    background-image: url(${labmet_placa});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 
   .location-content {
+    width: 58%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 140px;
     display: flex;
-    width: 80%;
-    height: max-content;
     flex-direction: column;
-    margin-top: 80px;
-
-    .location-iframe {
-      width: 600px;
-      height: 400px;
+    align-items: center;
+    .location-map {
+      width: 44%;
+      position: absolute;
+      z-index: 1;
+      top: 44%;
+      right: 2%;
+      opacity: 0.8;
     }
 
-    .location-link {
+    .location-iframe-content {
+      width: 100%;
+      height: max-content;
+      margin-top: 50px;
+      box-sizing: border-box;
+      padding-left: 100px;
       display: flex;
-      width: 600px;
-      justify-content: center;
-      margin-top: 20px;
+      flex-direction: column;
+      .location-iframe {
+        width: 600px;
+        height: 400px;
+      }
 
-      :nth-child(1) {
-        width: max-content;
-        height: max-content;
-        padding: 12px 30px;
-        font-size: 22px;
-        font-family: 'Kanit', sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        background-color: ${theme.colors.primary};
-        color: #fff;
-        border-radius: 6px;
-        transition: 300ms;
-        &:hover {
-          scale: 1.08;
+      .location-link {
+        display: flex;
+        width: 600px;
+        justify-content: center;
+        margin-top: 20px;
+
+        :nth-child(1) {
+          width: max-content;
+          height: max-content;
+          padding: 12px 30px;
+          font-size: 22px;
+          font-family: 'Kanit', sans-serif;
+          font-weight: 700;
+          text-decoration: none;
+          background-color: ${theme.colors.default};
+          color: ${theme.colors.primary};
+          border-radius: 6px;
+          transition: 300ms;
+          &:hover {
+            scale: 1.08;
+            background-color: ${theme.colors.secondary};
+            color: ${theme.colors.primary};
+          }
         }
       }
     }
   }
+  /* 
 
   @media (max-width: 1550px) {
     margin-top: 40px;
@@ -93,5 +114,5 @@ export const Location = styled.section`
         }
       }
     }
-  }
+  } */
 `;

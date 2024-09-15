@@ -4,12 +4,13 @@ import { Banner } from '../styles/styled/Home/Banner';
 import { InfoSection } from '../styles/styled/Home/InfoSection';
 import { Location } from '../styles/styled/Home/Location';
 import Header from '../components/Header/Header';
-import wave from '../assets/svg/wave.svg';
+import wave_home from '../assets/svg/wave_home.svg';
 import logo from '../assets/svg/logo.svg';
 import metrology from '../assets/imgs/metrology.png';
 import capacitacao from '../assets/imgs/capacitacao.jpg';
 import labmetName from '../assets/svg/labmet_name.svg';
 import pb_map from '../assets/svg/pb_map.svg';
+import triangle from '../assets/svg/triangle.svg';
 import { Link } from 'react-router-dom';
 import { Installations } from '../styles/styled/Home/Installations';
 import { SectionTitle } from '../components/SectionTitle';
@@ -19,7 +20,7 @@ import Footer from '../components/Footer/Footer';
 export default function Home() {
   return (
     <HomeStyles>
-      <Header bg={theme.colors.primary} fontColor="#fff"/>
+      <Header bg={theme.colors.primary} fontColor="#fff" />
       <Banner />
       <MainSection>
         <img className="labmet-sigla" src={labmetName}></img>
@@ -35,10 +36,10 @@ export default function Home() {
         <Link to="/sobre" className="about-link">
           SAIBA MAIS
         </Link>
-        <img className="banner-wave" src={wave} />
+        <img className="banner-wave" src={wave_home} />
       </MainSection>
       <InfoSection>
-        <SectionTitle>ÁREAS DE ATUAÇÃO</SectionTitle>
+        <SectionTitle $titleColor={theme.colors.primary}>ÁREAS DE ATUAÇÃO</SectionTitle>
         <ul className="areas">
           <div className="areas-bg">
             <img className="areas-logo" src={logo} />
@@ -74,22 +75,29 @@ export default function Home() {
             </h5>
           </li>
         </ul>
+        <img className='bottom-triangle' src={triangle}/>
       </InfoSection>
       <Location>
-        <img className="location-map" src={pb_map} />
-        <SectionTitle $titleColor={theme.colors.primary}>
-          LOCALIZAÇÃO
-        </SectionTitle>
+        <div className="location-image"></div>
         <div className="location-content">
-          <iframe
-            className="location-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.254097466703!2d-35.910861924089886!3d-7.211827870807712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1f6fa71a700f%3A0xcb0d0fdae2dd2b65!2sLaborat%C3%B3rio%20de%20Metrologia%20(LABMET%20UFCG)!5e0!3m2!1spt-BR!2sbr!4v1723124578278!5m2!1spt-BR!2sbr"
-            loading="lazy"
-          ></iframe>
-          <div className="location-link">
-            <a href="https://maps.app.goo.gl/rr1XLSKxGn1Tg9Ja6" target="_blank">
-              Google Maps
-            </a>
+          <SectionTitle $titleColor={theme.colors.default}>
+            LOCALIZAÇÃO
+          </SectionTitle>
+          <img className="location-map" src={pb_map} />
+          <div className="location-iframe-content">
+            <iframe
+              className="location-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.254097466703!2d-35.910861924089886!3d-7.211827870807712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1f6fa71a700f%3A0xcb0d0fdae2dd2b65!2sLaborat%C3%B3rio%20de%20Metrologia%20(LABMET%20UFCG)!5e0!3m2!1spt-BR!2sbr!4v1723124578278!5m2!1spt-BR!2sbr"
+              loading="lazy"
+            ></iframe>
+            <div className="location-link">
+              <a
+                href="https://maps.app.goo.gl/rr1XLSKxGn1Tg9Ja6"
+                target="_blank"
+              >
+                Google Maps
+              </a>
+            </div>
           </div>
         </div>
       </Location>

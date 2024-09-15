@@ -15,9 +15,9 @@ export const HeaderStyles = styled.header<HeaderStylesProps>`
   align-items: center;
   justify-content: flex-end;
   z-index: 999;
-  background-color: ${({bg}) => bg || theme.colors.primary};
+  background-color: ${({ bg }) => bg || theme.colors.primary};
   position: absolute;
-  border: 1px solid ${({fontColor}) => fontColor || theme.colors.primary};
+  border: 1px solid ${({ fontColor }) => fontColor || theme.colors.primary};
 
   .header-logo {
     height: 70%;
@@ -34,14 +34,15 @@ export const HeaderStyles = styled.header<HeaderStylesProps>`
       width: max-content;
       padding: 0px 26px;
       text-decoration: none;
-      color: ${({fontColor}) => fontColor || theme.colors.primary};
+      color: ${({ fontColor }) => fontColor || theme.colors.primary};
       font-weight: 600;
       font-size: 16px;
       transition: 300ms;
       align-items: center;
       &:hover {
-        background-color:  ${({fontColor}) => fontColor || theme.colors.primary};
-        color: ${({bg}) => bg || theme.colors.primary};
+        background-color: ${({ fontColor }) =>
+          fontColor || theme.colors.primary};
+        color: ${({ bg }) => bg || theme.colors.primary};
       }
     }
   }

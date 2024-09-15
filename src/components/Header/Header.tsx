@@ -8,7 +8,7 @@ interface HeaderProps {
   fontColor: string;
 }
 
-const Header: React.FC<HeaderProps> = ({bg, fontColor}) => {
+const Header: React.FC<HeaderProps> = ({ bg, fontColor }) => {
   return (
     <HeaderStyles bg={bg} fontColor={fontColor}>
       <img className="header-logo" src={logo} alt="Header Logo" />
