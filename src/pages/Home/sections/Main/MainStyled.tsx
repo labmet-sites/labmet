@@ -6,7 +6,6 @@ export const MainStyled = styled.section`
   width: 100%;
   height: 100vh;
   flex-direction: column;
-  background-color: antiquewhite;
   background-image: url(${mainBg});
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,13 +35,13 @@ export const MainStyled = styled.section`
 
   .about-button {
     background-color: #fff;
-    padding: 16px 28px;
+    padding: 12px 30px;
     color: ${theme.colors.primary};
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 800;
     border-radius: 12px;
-    transition: 300ms;
-    font-size: 28px;
+    transition: 200ms;
+    font-size: 26px;
 
     &:hover {
       cursor: pointer;
