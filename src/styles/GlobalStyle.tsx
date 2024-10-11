@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import FuturaTTF from '../assets/fonts/Futura.otf';
 
 const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -48,9 +47,5 @@ const GlobalStyle = createGlobalStyle`
 	    border-spacing: 0;
     }
 
-    @font-face {
-    font-family: "Futura-Medium";
-    src: url(${FuturaTTF}) format("opentype");
-}
 `;
 export default GlobalStyle;
