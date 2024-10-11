@@ -1,15 +1,17 @@
-import styled from "styled-components";
-import Main from "./sections/Main/Main";
-import AreasSection from "./sections/Areas/AreasSection";
-import FacilitiesSection from "./sections/Facilities/FacilitiesSection";
-import YoutubeSection from "./sections/Youtube/YoutubeSection";
-import InstaSection from "./sections/Insta/InstaSection";
-import LocationSection from "./sections/Location/LocationSection";
-import Footer from "../../components/Footer/Footer";
+import styled from 'styled-components';
+import Main from './sections/Main/Main';
+import AreasSection from './sections/Areas/AreasSection';
+import FacilitiesSection from './sections/Facilities/FacilitiesSection';
+import YoutubeSection from './sections/Youtube/YoutubeSection';
+import InstaSection from './sections/Insta/InstaSection';
+import LocationSection from './sections/Location/LocationSection';
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
 
 export default function Home() {
   return (
     <HomeContainer>
+      <Header/>
       <Main></Main>
       <AreasSection></AreasSection>
       <FacilitiesSection></FacilitiesSection>
@@ -25,4 +27,5 @@ const HomeContainer = styled.div`
   width: 100%;
   height: max-content;
   flex-direction: column;
+  position: relative;
 `;

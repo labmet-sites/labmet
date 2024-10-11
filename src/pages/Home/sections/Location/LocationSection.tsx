@@ -1,9 +1,5 @@
-import { LocationStyled } from "./LocationStyled";
+import { LocationStyled } from './LocationStyled';
 
-export default function LocationSection(){
-    return (
-        <LocationStyled>
-            Location
-        </LocationStyled>
-    );
+export default function LocationSection() {
+  return <LocationStyled>Location</LocationStyled>;
 }

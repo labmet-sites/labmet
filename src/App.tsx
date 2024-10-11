@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import GlobalStyle from "./styles/GlobalStyle";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Services from "./pages/Services/Services";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contaxt";
+import styled from 'styled-components';
+import GlobalStyle from './styles/GlobalStyle';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Services from './pages/Services/Services';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contaxt';
 
 function App() {
   return (
@@ -35,7 +35,8 @@ const Body = styled.body`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
+    color: #fff;
   }
 `;

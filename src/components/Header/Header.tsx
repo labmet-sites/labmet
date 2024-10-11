@@ -1,5 +1,5 @@
-import { HeaderStyled } from "./HeaderStyled";
+import { HeaderStyled } from './HeaderStyled';
 
 export default function Header() {
-  return <HeaderStyled></HeaderStyled>;
+  return <HeaderStyled>HEADER</HeaderStyled>;
 }

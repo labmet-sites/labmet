@@ -1,8 +1,5 @@
-import { FacilitiesStyled } from "./FacilitiesStyled";
+import { FacilitiesStyled } from './FacilitiesStyled';
 
-export default function FacilitiesSection(){
-    return (
-        <FacilitiesStyled>
-        </FacilitiesStyled>
-    );
+export default function FacilitiesSection() {
+  return <FacilitiesStyled></FacilitiesStyled>;
 }
