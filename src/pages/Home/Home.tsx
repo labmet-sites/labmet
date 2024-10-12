@@ -11,7 +11,7 @@ import Header from '../../components/Header/Header';
 export default function Home() {
   return (
     <HomeContainer>
-      <Header/>
+      <Header />
       <Main></Main>
       <AreasSection></AreasSection>
       <FacilitiesSection></FacilitiesSection>

@@ -10,8 +10,9 @@ export const MainStyled = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
 
-  img {
+  .main-abbreviation {
     width: 36%;
     height: auto;
     margin-bottom: 10px;
@@ -35,10 +36,10 @@ export const MainStyled = styled.section`
 
   .about-button {
     background-color: #fff;
-    padding: 12px 30px;
+    padding: 16px 30px;
     color: ${theme.colors.primary};
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
     border-radius: 12px;
     transition: 200ms;
     font-size: 26px;
@@ -49,5 +50,12 @@ export const MainStyled = styled.section`
       color: #fff;
       scale: 1.04;
     }
+  }
+
+  .main-wave {
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    bottom: 0px;
   }
 `;

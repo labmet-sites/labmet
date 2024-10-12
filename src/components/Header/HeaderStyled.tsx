@@ -6,17 +6,17 @@ export const HeaderStyled = styled.header`
   z-index: 999;
   top: 30px;
   width: 96%;
-  height: 60px;
+  height: 56px;
   border-radius: 6px;
   background-color: #fff;
 
-  img{
+  img {
     height: 70%;
     position: absolute;
     left: 20px;
   }
 
-  ul{
+  ul {
     width: 40%;
     height: 100%;
     position: absolute;
@@ -28,7 +28,7 @@ export const HeaderStyled = styled.header`
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 
-    .header-page{
+    .header-page {
       margin-right: 60px;
       font-size: 20px;
       padding: 0px 2px 1px 2px;
@@ -39,7 +39,7 @@ export const HeaderStyled = styled.header`
       text-decoration: none;
       font-weight: 300;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         scale: 1.04;
         border-color: #fff;
