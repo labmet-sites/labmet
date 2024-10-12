@@ -24,7 +24,7 @@ function App() {
 
 export default App;
 
-const Body = styled.body`
+const Body = styled.div`
   width: 100%;
   height: max-content;
   display: flex;
