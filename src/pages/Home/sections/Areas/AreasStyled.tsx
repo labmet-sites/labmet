@@ -1,7 +1,18 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { theme } from '../../../../styles/theme';
 import metrology from '../../../../assets/img/metrology.png';
 import consultancy from '../../../../assets/img/consultancy.png';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const AreasStyled = styled.section`
   width: 100%;
@@ -37,6 +48,15 @@ export const AreasStyled = styled.section`
       flex-direction: column;
       justify-content: space-between;
       z-index: 999;
+
+      opacity: 0;
+      transform: translateY(100px);
+      transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
+      &.visible {
+        animation: ${fadeIn} 1.6s forwards;
+      }
 
       .cards {
         display: flex;
