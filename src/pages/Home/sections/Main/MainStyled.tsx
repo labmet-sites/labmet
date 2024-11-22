@@ -5,6 +5,9 @@ import { theme } from '../../../../styles/theme';
 export const MainStyled = styled.section`
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-image: url(${mainBg});
   background-repeat: no-repeat;

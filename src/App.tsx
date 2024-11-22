@@ -29,12 +29,10 @@ const Body = styled.div`
   height: max-content;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   position: relative;
 
   * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
     color: #fff;

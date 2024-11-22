@@ -20,7 +20,7 @@ export const useScrollAnimation = () => {
         }
       },
       // Configuração do observer, threshold indica que 10% do elemento precisa estar visível
-      { threshold: 0.2},
+      { threshold: 0.2 },
     );
 
     // Verifica se a referência ao elemento DOM foi atribuída corretamente

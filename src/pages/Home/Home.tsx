@@ -6,18 +6,16 @@ import YoutubeSection from './sections/Youtube/YoutubeSection';
 import InstaSection from './sections/Insta/InstaSection';
 import LocationSection from './sections/Location/LocationSection';
 import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
 
 export default function Home() {
   return (
     <HomeContainer>
-      <Header />
-      <Main></Main>
-      <AreasSection></AreasSection>
-      <FacilitiesSection></FacilitiesSection>
-      <YoutubeSection></YoutubeSection>
-      <LocationSection></LocationSection>
-      <InstaSection></InstaSection>
+      <Main />
+      <AreasSection />
+      <FacilitiesSection />
+      <YoutubeSection />
+      <LocationSection />
+      <InstaSection />
       <Footer />
     </HomeContainer>
   );

@@ -1,18 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { theme } from '../../../../styles/theme';
 import metrology from '../../../../assets/img/metrology.png';
 import consultancy from '../../../../assets/img/consultancy.png';
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
 
 export const AreasStyled = styled.section`
   width: 100%;
@@ -20,6 +9,8 @@ export const AreasStyled = styled.section`
   background-color: ${theme.colors.background};
   position: relative;
   flex-direction: column;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
   padding-top: 60px;
 
@@ -41,21 +32,14 @@ export const AreasStyled = styled.section`
     .area-content {
       width: 50%;
       height: 100%;
+      display: flex;
+      align-items: center;
       flex-direction: column;
       justify-content: space-between;
       z-index: 999;
 
-      opacity: 0;
-      transform: translateY(100px);
-      transition:
-        opacity 0.6s ease-out,
-        transform 0.6s ease-out;
-
-      &.visible {
-        animation: ${fadeIn} 1.6s forwards;
-      }
-
       .cards {
+        display: flex;
         width: 420px;
         height: 280px;
         background-color: pink;
@@ -85,6 +69,9 @@ export const AreasStyled = styled.section`
 
           .name-right,
           .area-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 56px;
             background-color: ${theme.colors.primary};
@@ -110,6 +97,7 @@ export const AreasStyled = styled.section`
 
       .area-text {
         width: 420px;
+        display: flex;
         height: max-content;
         text-align: justify;
         flex-direction: column;
@@ -137,11 +125,13 @@ export const AreasStyled = styled.section`
     }
 
     .right {
+      display: flex;
       flex-direction: column-reverse;
 
       .cards {
         .card-1 {
           left: 40px;
+          bottom: -40px;
         }
 
         .card-right {

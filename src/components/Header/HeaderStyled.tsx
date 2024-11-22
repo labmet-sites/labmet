@@ -2,13 +2,16 @@ import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
 export const HeaderStyled = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   z-index: 999;
   top: 30px;
   width: 96%;
   height: 56px;
   border-radius: 6px;
-  background-color: #fff;
+  background: linear-gradient(135deg, #ffffff 60%, ${theme.colors.primary} 40%);
 
   img {
     height: 70%;
@@ -20,8 +23,10 @@ export const HeaderStyled = styled.header`
     width: 40%;
     height: 100%;
     position: absolute;
+    display: flex;
+    align-items: center;
     right: 0px;
-    background-color: ${theme.colors.primary};
+    background-color: transparent;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
     justify-content: flex-end;
     padding-right: 30px;
