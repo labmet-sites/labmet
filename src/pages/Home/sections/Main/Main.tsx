@@ -9,7 +9,7 @@ export default function Main() {
     <MainStyled>
       <Header />
       <img className="main-abbreviation" src={abbreviation} />
-      <title>Laboratório de Metrologia de Campina Grande</title>
+      <h1 className="title">Laboratório de Metrologia de Campina Grande</h1>
       <p>
         A finalidade do Laboratório de Metrologia (LABMET) de Campina Grande é
         promover a criação,

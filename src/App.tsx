@@ -35,6 +35,5 @@ const Body = styled.div`
   * {
     font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
-    color: #fff;
   }
 `;

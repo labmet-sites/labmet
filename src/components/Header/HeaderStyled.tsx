@@ -43,6 +43,7 @@ export const HeaderStyled = styled.header`
       transition: 200ms;
       text-decoration: none;
       font-weight: 300;
+      color: #fff;
 
       &:hover {
         cursor: pointer;

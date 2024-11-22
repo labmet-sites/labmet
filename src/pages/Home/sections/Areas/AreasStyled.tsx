@@ -102,6 +102,7 @@ export const AreasStyled = styled.section`
             font-weight: 300;
             text-decoration: none;
             transition: 200ms;
+            color: #fff;
 
             &:hover {
               cursor: pointer;

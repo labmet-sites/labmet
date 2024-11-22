@@ -21,11 +21,12 @@ export const MainStyled = styled.section`
     margin-bottom: 10px;
   }
 
-  title {
+  .title {
     font-size: 40px;
     letter-spacing: 3px;
     font-weight: 200;
     margin-bottom: 36px;
+    color: #fff;
   }
 
   p {
@@ -35,6 +36,7 @@ export const MainStyled = styled.section`
     letter-spacing: 1px;
     line-height: 28px;
     margin-bottom: 50px;
+    color: #fff;
   }
 
   .about-button {
