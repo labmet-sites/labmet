@@ -6,6 +6,7 @@ import { TbArrowBadgeLeft } from 'react-icons/tb';
 import { TbArrowBadgeRight } from 'react-icons/tb';
 
 export default function FacilitiesSection() {
+
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const sections = ['1', '2', '3', '4'];
@@ -79,8 +80,22 @@ export default function FacilitiesSection() {
             transition: 'transform 0.3s ease-in-out',
           }}
         >
-          <h2>Conteúdo da Seção 4</h2>
-          <p>Texto ou outros elementos da seção 4.</p>
+          <div className="sec-4-text">
+          <div className='texts'>
+          <h1>DEMAIS SALAS</h1>
+            <h3>
+            <span>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book
+            </h3>
+          </div>
+          <div className='sec-4-text-img'/>
+          </div>
+          <div className="sec-4-imgs">
+            <div className='room-img'/>
+            <div className='lab-img'/>
+            <div className='aud-img'/>
+          </div>
         </div>
         <div className="arrow left" onClick={() => handleNavigation('left')}>
           <TbArrowBadgeLeft />

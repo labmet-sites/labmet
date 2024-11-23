@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import labmetfrontal from '../../../../assets/img/labmetfrontal.jpg';
 import anechoic2 from '../../../../assets/img/anechoic2.jpg';
 import anechoic3 from '../../../../assets/img/anechoic3.jpg';
+import sala from '../../../../assets/img/sala.jpg';
+import auditorio from '../../../../assets/img/auditorio.png';
+import lab from '../../../../assets/img/lab_fisica.png';
+import pessoas from '../../../../assets/img/pessoas.jpg';
 import { theme } from '../../../../styles/theme';
 
 export const FacilitiesStyled = styled.section`
@@ -40,7 +44,7 @@ export const FacilitiesStyled = styled.section`
       }
 
       &:hover {
-        background-color: rgba(22, 48, 75, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
         cursor: pointer;
 
         :nth-child(1) {
@@ -150,6 +154,94 @@ export const FacilitiesStyled = styled.section`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+      }
+    }
+
+    .sec-4 {
+      background-color: #fff;
+      .sec-4-text {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 20px 20px;
+
+        .texts {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            color: ${theme.colors.primary};
+          }
+
+          h3 {
+            margin-top: 20px;
+            width: 100%;
+            text-align: justify;
+            color: ${theme.colors.primary};
+            font-weight: 200;
+            font-size: 24px;
+            line-height: 1.2;
+
+            span {
+              font-weight: 500;
+            }
+          }
+        }
+
+        .sec-4-text-img {
+          width: 100%;
+          height: 64%;
+          background-image: url(${pessoas});
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          border-radius: 6px;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      .sec-4-imgs {
+        width: 50%;
+        height: 100%;
+        padding: 10px 20px 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .room-img,
+        .lab-img,
+        .aud-img {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          border-radius: 6px;
+        }
+
+        .room-img{
+          width: 100%;
+          height: 60%;
+        }
+
+        .lab-img,
+        .aud-img {
+          width: 48%;
+          height: 38%;
+        }
+
+        .room-img{
+          background-image: url(${sala});
+        }
+
+        .lab-img{
+          background-image: url(${lab});
+        }
+
+        .aud-img{
+          background-image: url(${auditorio});
+        }
       }
     }
   }
