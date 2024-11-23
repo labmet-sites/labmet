@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import labmetfrontal from '../../../../assets/img/labmetfrontal.jpg';
 import anechoic2 from '../../../../assets/img/anechoic2.jpg';
+import anechoic3 from '../../../../assets/img/anechoic3.jpg';
 import { theme } from '../../../../styles/theme';
 
 export const FacilitiesStyled = styled.section`
@@ -73,9 +74,9 @@ export const FacilitiesStyled = styled.section`
       left: 0;
 
       h1 {
-        margin-top: 24px;
-        font-size: 38px;
-        font-weight: 200;
+        margin-top: 32px;
+        font-size: 42px;
+        font-weight: 300;
         color: #ffffff;
       }
 
@@ -111,15 +112,45 @@ export const FacilitiesStyled = styled.section`
         top: 60px;
         left: 120px;
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.2;
       }
     }
     .sec-3 {
-      background-color: #c56cdb;
-    }
-    .sec-3 {
-      background-color: #ddeb5f;
+      .sec-3-content {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        * {
+          color: ${theme.colors.primary};
+        }
+      }
+
+      .sec-3-text {
+        width: 80%;
+        margin-top: 40px;
+        font-size: 28px;
+        font-weight: 200;
+        text-align: justify;
+        line-height: 1.2;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      .sec-3-img {
+        width: 60%;
+        height: 100%;
+        background-image: url(${anechoic3});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
     }
   }
 `;
