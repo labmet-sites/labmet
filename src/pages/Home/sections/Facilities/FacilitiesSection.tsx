@@ -2,16 +2,14 @@ import { useState } from 'react';
 import { Title } from '../../../../components/Title/Title';
 import { theme } from '../../../../styles/theme';
 import { FacilitiesStyled } from './FacilitiesStyled';
-import { TbArrowBadgeLeft } from 'react-icons/tb';
-import { TbArrowBadgeRight } from 'react-icons/tb';
+import { TbArrowBadgeLeft, TbArrowBadgeRight } from 'react-icons/tb';
 
 export default function FacilitiesSection() {
-
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const sections = ['1', '2', '3', '4'];
 
-  const handleNavigation = (direction: any) => {
+  const handleNavigation = (direction: 'left' | 'right') => {
     if (direction === 'left') {
       setCurrentIndex((prevIndex) =>
         prevIndex === 0 ? sections.length - 1 : prevIndex - 1,
@@ -21,6 +19,10 @@ export default function FacilitiesSection() {
         prevIndex === sections.length - 1 ? 0 : prevIndex + 1,
       );
     }
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
   };
 
   return (
@@ -81,20 +83,22 @@ export default function FacilitiesSection() {
           }}
         >
           <div className="sec-4-text">
-          <div className='texts'>
-          <h1>DEMAIS SALAS</h1>
-            <h3>
-            <span>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book
-            </h3>
-          </div>
-          <div className='sec-4-text-img'/>
+            <div className="texts">
+              <h1>DEMAIS SALAS</h1>
+              <h3>
+                <span>Lorem Ipsum</span> is simply dummy text of the printing
+                and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type
+                specimen book
+              </h3>
+            </div>
+            <div className="sec-4-text-img" />
           </div>
           <div className="sec-4-imgs">
-            <div className='room-img'/>
-            <div className='lab-img'/>
-            <div className='aud-img'/>
+            <div className="room-img" />
+            <div className="lab-img" />
+            <div className="aud-img" />
           </div>
         </div>
         <div className="arrow left" onClick={() => handleNavigation('left')}>
@@ -103,6 +107,16 @@ export default function FacilitiesSection() {
         <div className="arrow right" onClick={() => handleNavigation('right')}>
           <TbArrowBadgeRight />
         </div>
+      </div>
+      {/* Bolinhas indicadoras */}
+      <div className="dots">
+        {sections.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => goToSlide(index)}
+          ></span>
+        ))}
       </div>
     </FacilitiesStyled>
   );

@@ -16,15 +16,38 @@ export const FacilitiesStyled = styled.section`
   align-items: center;
   padding-top: 50px;
   flex-direction: column;
+  position: relative;
+
+  .dots {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    z-index: 999;
+    position: absolute;
+    bottom: 40px;
+    .dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: lightgray;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .dot.active {
+      background-color: ${theme.colors.primary};
+    }
+  }
 
   .facilities-container {
     overflow: hidden;
     position: relative;
     display: flex;
+    justify-content: center;
     width: 94%;
     height: 84%;
     margin-top: 30px;
     background-color: transparent;
+
     .arrow {
       position: absolute;
       display: flex;
@@ -220,7 +243,7 @@ export const FacilitiesStyled = styled.section`
           border-radius: 6px;
         }
 
-        .room-img{
+        .room-img {
           width: 100%;
           height: 60%;
         }
@@ -231,15 +254,15 @@ export const FacilitiesStyled = styled.section`
           height: 38%;
         }
 
-        .room-img{
+        .room-img {
           background-image: url(${sala});
         }
 
-        .lab-img{
+        .lab-img {
           background-image: url(${lab});
         }
 
-        .aud-img{
+        .aud-img {
           background-image: url(${auditorio});
         }
       }
