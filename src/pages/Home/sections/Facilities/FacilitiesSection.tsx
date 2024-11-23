@@ -26,18 +26,51 @@ export default function FacilitiesSection() {
     <FacilitiesStyled>
       <Title $titleColor={theme.colors.primary}>Nossas Instalações </Title>
       <div className="facilities-container">
-        {sections.map((item, index) => (
-          <div
-            key={index}
-            className={`facilitie sec-${index + 1}`}
-            style={{
-              transform: `translateX(${(index - currentIndex) * 100}%)`,
-              transition: 'transform 0.3s ease-in-out',
-            }}
-          >
-            {item}
-          </div>
-        ))}
+        {/* <div
+          className="facilitie sec-1"
+          style={{
+            transform: `translateX(${(0 - currentIndex) * 100}%)`,
+            transition: 'transform 0.3s ease-in-out',
+          }}
+        >
+          <h1>VISTA FRONTAL</h1>
+        </div> */}
+        <div
+          className="facilitie sec-2"
+          // style={{
+          //   transform: `translateX(${(1 - currentIndex) * 100}%)`,
+          //   transition: 'transform 0.3s ease-in-out',
+          // }}
+        >
+          <h1>CÂMARA ANECOICA</h1>
+          <h2>{`(interior)`}</h2>
+          <h3 className="sec-2-text">
+            Usada para conter reflexões sonoras <br /> e eletromagnéticas.
+            Possui isolamento para <br /> fontes de ruídos externos, simulando{' '}
+            <br />
+            uma dimensão infinita.
+          </h3>
+        </div>
+        {/* <div
+          className="facilitie sec-3"
+          style={{
+            transform: `translateX(${(2 - currentIndex) * 100}%)`,
+            transition: 'transform 0.3s ease-in-out',
+          }}
+        >
+          <h2>Conteúdo da Seção 3</h2>
+          <p>Texto ou outros elementos da seção 3.</p>
+        </div>
+        <div
+          className="facilitie sec-4"
+          style={{
+            transform: `translateX(${(3 - currentIndex) * 100}%)`,
+            transition: 'transform 0.3s ease-in-out',
+          }}
+        >
+          <h2>Conteúdo da Seção 4</h2>
+          <p>Texto ou outros elementos da seção 4.</p>
+        </div> */}
         <div className="arrow left" onClick={() => handleNavigation('left')}>
           <TbArrowBadgeLeft />
         </div>
