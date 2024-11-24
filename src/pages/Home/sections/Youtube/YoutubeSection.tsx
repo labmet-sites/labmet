@@ -8,14 +8,14 @@ export default function YoutubeSection() {
       <div className="vid-1">
         <div className="under-div" />
         <div className="vid-1-content">
-          {`
-          Nosso Canal do YouTube apresenta atualmente três palestras que exploram temas essenciais no 
-          densevolvimento da engenharia e suas tecnologias. Embora este seja o ponto de partida, nosso 
-          objetivo é expandir continuamente essa biblioteca de conteúdos com novos materiais, para oferecer 
-          uma formação cada vez mais completa e atualizada. Esses vídeos foram elaborados por especialistas 
-          e trazem informações valiosas para quem deseja se aprofundar no campo. Acompanhe nosso canal e 
-          fique atento às próximas atualizações!
-        `}
+          Nosso <strong>Canal do YouTube</strong> apresenta atualmente três
+          palestras que exploram temas essenciais no densevolvimento da
+          engenharia e suas tecnologias. Embora este seja o ponto de partida,
+          nosso objetivo é expandir continuamente essa biblioteca de conteúdos
+          com novos materiais, para oferecer uma formação cada vez mais completa
+          e atualizada. Esses vídeos foram elaborados por especialistas e trazem
+          informações valiosas para quem deseja se aprofundar no campo.
+          Acompanhe nosso canal e fique atento às próximas atualizações!
           <a href="yotube.com" className="card-1"></a>
         </div>
       </div>

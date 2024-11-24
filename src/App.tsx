@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Services from './pages/Services/Services';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contaxt';
+import { theme } from './styles/theme';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ const Body = styled.div`
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  background-color: ${theme.colors.primary};
 
   * {
     font-family: 'Kanit', sans-serif;
