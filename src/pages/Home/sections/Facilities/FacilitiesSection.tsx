@@ -27,7 +27,7 @@ export default function FacilitiesSection() {
 
   return (
     <FacilitiesStyled>
-      <Title $titleColor={theme.colors.primary}>Nossas Instalações </Title>
+      <Title $titleColor={theme.colors.primary}>NOSSAS INSTALAÇÕES</Title>
       <div className="facilities-container">
         <div
           className="facilitie sec-1"
@@ -108,7 +108,6 @@ export default function FacilitiesSection() {
           <TbArrowBadgeRight />
         </div>
       </div>
-      {/* Bolinhas indicadoras */}
       <div className="dots">
         {sections.map((_, index) => (
           <span

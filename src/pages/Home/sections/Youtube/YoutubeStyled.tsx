@@ -16,7 +16,7 @@ export const YoutubeStyled = styled.section`
     position: absolute;
     z-index: 999;
     left: 0px;
-    bottom: -130px;
+    bottom: -80px;
   }
 
   .vid-1 {
@@ -47,8 +47,10 @@ export const YoutubeStyled = styled.section`
       line-height: 1.6;
       text-align: justify;
       z-index: 2;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      
+      box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
       .card-1 {
         width: 520px;
         height: 100%;

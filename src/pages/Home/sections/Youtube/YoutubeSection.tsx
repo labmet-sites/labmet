@@ -6,7 +6,7 @@ export default function YoutubeSection() {
     <YoutubeStyled>
       <img className="pci" src={pci}></img>
       <div className="vid-1">
-        <div className='under-div'/>
+        <div className="under-div" />
         <div className="vid-1-content">
           {`
           Nosso Canal do YouTube apresenta atualmente três palestras que exploram temas essenciais no 
