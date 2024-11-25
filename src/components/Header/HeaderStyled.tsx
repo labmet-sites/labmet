@@ -11,7 +11,7 @@ export const HeaderStyled = styled.header`
   width: 96%;
   height: 56px;
   border-radius: 6px;
-  background: linear-gradient(135deg, #ffffff 60%, ${theme.colors.primary} 40%);
+  background: linear-gradient(135deg, #ffffff 30%, ${theme.colors.primary} 30%);
 
   img {
     height: 70%;
@@ -20,7 +20,7 @@ export const HeaderStyled = styled.header`
   }
 
   ul {
-    width: 40%;
+    width: 70%;
     height: 100%;
     position: absolute;
     display: flex;
@@ -49,6 +49,28 @@ export const HeaderStyled = styled.header`
         cursor: pointer;
         scale: 1.04;
         border-color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 1500px) {
+    top: 22px;
+    height: 48px;
+    border-radius: 4px;
+
+    img {
+      height: 70%;
+      position: absolute;
+      left: 20px;
+    }
+
+    ul {
+      padding-right: 20px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+
+      .header-page {
+        font-size: 16px;
       }
     }
   }

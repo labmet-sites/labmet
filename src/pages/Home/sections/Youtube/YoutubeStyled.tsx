@@ -96,4 +96,89 @@ export const YoutubeStyled = styled.section`
       background-color: #5f5f5f;
     }
   }
+
+  @media (max-width: 1580px) {
+    .pci {
+      width: 540px;
+      bottom: -40px;
+    }
+
+    .vid-1 {
+      height: 280px;
+      margin: 24px;
+      .under-div {
+        border-radius: 12px;
+        bottom: -42px;
+        right: -42px;
+      }
+      .vid-1-content {
+        border-radius: 12px 40px 40px 12px;
+        padding: 12px 540px 12px 22px;
+        font-size: 18px;
+        line-height: 1.7;
+
+        .card-1 {
+          width: 520px;
+          height: 100%;
+          border-radius: 12px;
+          border-radius: 0px 12px 12px 0px;
+        }
+      }
+    }
+
+    .vid-2 {
+      right: 260px;
+    }
+
+    .videos {
+      height: 290px;
+      border-radius: 12px 40px 40px 12px;
+      margin-bottom: 24px;
+
+      .yt-card {
+        border-radius: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 1350px) {
+    .pci {
+      width: 480px;
+      bottom: -10px;
+    }
+
+    .vid-1 {
+      height: 260px;
+      margin: 20px;
+      .under-div {
+        border-radius: 8px;
+        bottom: -32px;
+        right: -32px;
+      }
+      .vid-1-content {
+        border-radius: 8px 40px 40px 8px;
+        padding: 10px 500px 10px 22px;
+        font-size: 16px;
+        .card-1 {
+          width: 480px;
+          border-radius: 0px 8px 8px 0px;
+        }
+      }
+    }
+
+    .vid-2 {
+      right: 220px;
+    }
+
+    .videos {
+      height: 270px;
+      border-radius: 8px 40px 40px 8px;
+      margin-bottom: 20px;
+
+      .yt-card {
+        width: 480px;
+        border-radius: 12px;
+      }
+    }
+  }
 `;

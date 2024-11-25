@@ -7,7 +7,7 @@ export const Title = styled.h1<{ $titleColor?: string }>`
   font-weight: 200;
   letter-spacing: 3px;
 
-  @media (max-width: 1550px) {
+  @media (max-width: 1580px) {
     font-size: 36px;
   }
 `;

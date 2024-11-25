@@ -92,4 +92,52 @@ export const FooterStyled = styled.footer`
       }
     }
   }
+
+  @media (max-width: 1500px) {
+    height: 300px;
+    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+
+    .footer-content {
+      .footer-logo {
+        height: 100px;
+      }
+
+      h1,
+      h2 {
+        margin-top: 6px;
+        font-size: 19px;
+      }
+
+      h2 {
+        letter-spacing: 1px;
+      }
+    }
+
+    .meuvao {
+      bottom: 18px;
+      left: 18px;
+      font-size: 13px;
+    }
+
+    .footerInfo {
+      right: 24px;
+
+      p {
+        font-size: 13px;
+        margin-bottom: 14px;
+      }
+    }
+
+    .footer-icons {
+      bottom: 20px;
+      right: 28px;
+
+      a {
+        * {
+          font-size: 28px;
+          margin: 0px 3px 0px 3px;
+        }
+      }
+    }
+  }
 `;

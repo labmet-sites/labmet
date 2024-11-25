@@ -16,13 +16,13 @@ export const MainStyled = styled.section`
   position: relative;
 
   .main-abbreviation {
-    width: 36%;
+    width: 600px;
     height: auto;
     margin-bottom: 10px;
   }
 
   .title {
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 3px;
     font-weight: 200;
     margin-bottom: 36px;
@@ -31,7 +31,7 @@ export const MainStyled = styled.section`
 
   p {
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 28px;
@@ -41,13 +41,13 @@ export const MainStyled = styled.section`
 
   .about-button {
     background-color: #fff;
-    padding: 16px 30px;
+    padding: 14px 28px;
     color: ${theme.colors.primary};
     text-decoration: none;
     font-weight: 700;
     border-radius: 12px;
     transition: 200ms;
-    font-size: 26px;
+    font-size: 21px;
 
     &:hover {
       cursor: pointer;
@@ -62,5 +62,26 @@ export const MainStyled = styled.section`
     z-index: 99;
     position: absolute;
     bottom: 0px;
+  }
+
+  @media (max-width: 1340px) {
+    .main-abbreviation {
+      width: 480px;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .about-button {
+      padding: 14px 24px;
+      font-size: 19px;
+    }
   }
 `;

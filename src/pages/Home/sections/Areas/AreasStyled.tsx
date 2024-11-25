@@ -62,7 +62,7 @@ export const AreasStyled = styled.section`
         display: flex;
         width: 420px;
         height: 280px;
-        background-color: pink;
+
         position: relative;
 
         .card-1,
@@ -161,6 +161,91 @@ export const AreasStyled = styled.section`
 
           .name-right {
             right: 72%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1580px) {
+    .areas-logo {
+      width: 56%;
+    }
+
+    .area-container {
+      height: 64%;
+      .area-content {
+        .cards {
+          width: 360px;
+          height: 230px;
+
+          .card-1 {
+            border: 5px solid ${theme.colors.primary};
+            bottom: 34px;
+            right: 34px;
+          }
+
+          .card-2 {
+            .name-right,
+            .area-name {
+              height: 50px;
+              font-size: 22px;
+            }
+
+            .area-name {
+              left: 72%;
+            }
+          }
+        }
+
+        .area-text {
+          width: 360px;
+
+          p {
+            font-size: 20px;
+          }
+          .services-link {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1330px) {
+    .areas-logo {
+      width: 70%;
+    }
+
+    .area-container {
+      height: 60%;
+      .area-content {
+        .cards {
+          width: 300px;
+          height: 180px;
+
+          .card-1 {
+            bottom: 28px;
+            right: 28px;
+          }
+
+          .card-2 {
+            .name-right,
+            .area-name {
+              height: 42px;
+              font-size: 19px;
+            }
+          }
+        }
+
+        .area-text {
+          width: 300px;
+
+          p {
+            font-size: 18px;
+          }
+          .services-link {
+            font-size: 13px;
           }
         }
       }
