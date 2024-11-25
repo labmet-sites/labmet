@@ -22,6 +22,39 @@ export const InstaStyled = styled.section`
       height: max-content;
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+      position: relative;
+      text-decoration: none;
+      transition: 300ms;
+
+      .insta-blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 300ms;
+
+        h5 {
+          color: #fff;
+          font-size: 32px;
+          font-family: 'Kanit', sans-serif;
+          font-weight: 800;
+          margin-bottom: 10px;
+          letter-spacing: 1px;
+        }
+
+        :nth-child(2) {
+          color: #fff;
+          font-size: 68px;
+        }
+      }
 
       .insta-header,
       .insta-footer {
@@ -85,6 +118,12 @@ export const InstaStyled = styled.section`
       .insta-img {
         width: 360px;
         background-color: #eb6e6e;
+      }
+
+      &:hover {
+        .insta-blur {
+          opacity: 1;
+        }
       }
     }
   }

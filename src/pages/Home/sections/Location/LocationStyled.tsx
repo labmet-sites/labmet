@@ -50,11 +50,12 @@ export const LocationStyled = styled.section`
 
         .map-button {
           background-color: ${theme.colors.primary};
-          padding: 10px 26px;
+          padding: 18px 26px;
           color: #fff;
           text-decoration: none;
           font-weight: 700;
           border-radius: 14px;
+          border: solid 2px ${theme.colors.primary};
           transition: 200ms;
           font-size: 28px;
 

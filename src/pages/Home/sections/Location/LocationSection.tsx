@@ -17,7 +17,13 @@ export default function LocationSection() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <button className="map-button">Google Maps</button>
+            <a
+              href="https://maps.app.goo.gl/1RMbbMRSFwNy1QgbA"
+              className="map-button"
+              target="_blank"
+            >
+              Google Maps
+            </a>
           </div>
         </div>
         <img className="maps-svg" src={map_svg} />

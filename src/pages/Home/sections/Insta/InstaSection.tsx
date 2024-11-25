@@ -10,6 +10,7 @@ import { BsFillSendFill } from 'react-icons/bs';
 import { MdBookmark } from 'react-icons/md';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { TiArrowForward } from 'react-icons/ti';
 
 export default function InstaSection() {
   const insta_imgs = [
@@ -41,6 +42,10 @@ export default function InstaSection() {
             target="_blank"
             href={i.url}
           >
+            <div className="insta-blur">
+              <h5>Ir para o post</h5>
+              <TiArrowForward />
+            </div>
             <div className="insta-header">
               <div className="insta-user">
                 <img className="user-logo" src={logo} alt="Logo" />
