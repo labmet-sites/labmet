@@ -26,4 +26,8 @@ const HomeContainer = styled.div`
   height: max-content;
   flex-direction: column;
   position: relative;
+
+  @media (max-width: 1100px) {
+    padding-top: 50px;
+  }
 `;

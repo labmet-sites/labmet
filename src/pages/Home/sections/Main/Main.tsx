@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import abbreviation from '../../../../assets/svg/abbreviation.svg';
 import main_wave from '../../../../assets/svg/main_wave.svg';
 import Header from '../../../../components/Header/Header';
+import MobileHeader from '../../../../components/MobileHeader/MobileHeader';
 
 export default function Main() {
   return (
     <MainStyled>
       <Header />
+      <MobileHeader />
       <img className="main-abbreviation" src={abbreviation} />
       <h1 className="title">Laboratório de Metrologia de Campina Grande</h1>
       <p>
