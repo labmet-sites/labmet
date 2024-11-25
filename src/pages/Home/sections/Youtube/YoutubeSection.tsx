@@ -16,14 +16,35 @@ export default function YoutubeSection() {
           e atualizada. Esses vídeos foram elaborados por especialistas e trazem
           informações valiosas para quem deseja se aprofundar no campo.
           Acompanhe nosso canal e fique atento às próximas atualizações!
-          <a href="yotube.com" className="card-1"></a>
+          <iframe
+            className="card-1"
+            src="https://www.youtube.com/embed/eEJIbPNLuFw?si=jMO3DJK6jUD7NPyc"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
       <div className="vid-2 videos">
-        <a className="card-2 yt-card"></a>
+        <iframe
+          className="card-2 yt-card"
+          src="https://www.youtube.com/embed/HdezkinMU0I?si=Z6ASKU5TADa3484i"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
       <div className="vid-3 videos">
-        <a className="yt-card"></a>
+        <iframe
+          className="yt-card"
+          src="https://www.youtube.com/embed/f9_uivq6Bz0?si=T341_L9fnEHvGlWj"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
     </YoutubeStyled>
   );

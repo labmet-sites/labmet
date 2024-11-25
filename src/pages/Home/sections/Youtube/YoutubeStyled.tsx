@@ -12,7 +12,7 @@ export const YoutubeStyled = styled.section`
   position: relative;
 
   .pci {
-    width: 800px;
+    width: 650px;
     position: absolute;
     z-index: 999;
     left: 0px;

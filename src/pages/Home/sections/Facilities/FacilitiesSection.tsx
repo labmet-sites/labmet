@@ -101,12 +101,12 @@ export default function FacilitiesSection() {
             <div className="aud-img" />
           </div>
         </div>
-        <div className="arrow left" onClick={() => handleNavigation('left')}>
-          <TbArrowBadgeLeft />
-        </div>
-        <div className="arrow right" onClick={() => handleNavigation('right')}>
-          <TbArrowBadgeRight />
-        </div>
+      </div>
+      <div className="arrow left" onClick={() => handleNavigation('left')}>
+        <TbArrowBadgeLeft />
+      </div>
+      <div className="arrow right" onClick={() => handleNavigation('right')}>
+        <TbArrowBadgeRight />
       </div>
       <div className="dots">
         {sections.map((_, index) => (

@@ -37,55 +37,52 @@ export const FacilitiesStyled = styled.section`
       background-color: ${theme.colors.primary};
     }
   }
+  .arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    overflow-x: hidden;
+
+    :nth-child(1) {
+      font-size: 50px;
+      transition: 300ms;
+      border-radius: 8px;
+      background-color: transparent;
+      clip-path: circle(50%, 50%);
+      transition: 200ms;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        scale: 1.02;
+      }
+    }
+  }
+
+  .left {
+    left: 34px;
+    border-radius: 14px 0px 0px 14px;
+  }
+
+  .right {
+    right: 34px;
+    border-radius: 0px 14px 14px 0px;
+  }
 
   .facilities-container {
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
-    width: 94%;
+    width: 90%;
     height: 84%;
     margin-top: 30px;
     background-color: transparent;
-
-    .arrow {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
-      width: 50px;
-      height: 100%;
-      transition: 300ms;
-      background-color: transparent;
-      overflow-x: hidden;
-
-      :nth-child(1) {
-        font-size: 44px;
-        color: ${theme.colors.secondary};
-        transition: 300ms;
-      }
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-
-        :nth-child(1) {
-          color: #ffffff;
-          scale: 1.06;
-        }
-      }
-    }
-
-    .left {
-      left: 0px;
-      border-radius: 14px 0px 0px 14px;
-    }
-
-    .right {
-      right: 0px;
-      border-radius: 0px 14px 14px 0px;
-    }
 
     .facilitie {
       flex-shrink: 0;
